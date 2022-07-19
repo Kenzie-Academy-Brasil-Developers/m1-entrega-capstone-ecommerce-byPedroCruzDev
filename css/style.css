@@ -204,7 +204,30 @@ section{
     font-size: 1.5rem;
     color:var(--main-color);
 }
-
+.header .cart-items-container .checkout-itens{
+    height: 9.0rem;
+    width: 100%;
+    background-color: #b98201;
+}
+.header .cart-items-container .checkout-itens .quantidade{
+    padding: 10px 0 10px 5px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    
+}
+.header .cart-items-container .checkout-itens .price{
+    padding: 10px 0 10px 5px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.header .cart-items-container .checkout-itens .price span{
+    float: right;
+    padding-right: 10px;
+}
+.header .cart-items-container .checkout-itens .quantidade span{
+    float: right;
+    padding-right: 10px;
+}
 .header .cart-items-container .btn{
     width: 100%;
     text-align: center;

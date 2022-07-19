@@ -81,5 +81,46 @@ const data = [
     addCart: "Adicionar ao carrinho",
     tag: ["Manga"],
   },
+  {
+    id: 9,
+    img: "../img/09.webp",
+    nameItem: "Inumanos - capa dura",
+    description:
+      "OS INUMANOS COMO VOCÊ NUNCA VIU! Os Inumanos são uma das esquisitices mais duradouras da Marvel. Uma raça de anomalias genéticas isolada na ilha de Attilan, suas mutações...",
+    value: 43.90,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Hq"],
+  },
+  {
+    id: 10,
+    img: "../img/10.webp",
+    nameItem: "Miles Morales: Homem Aranha",
+    description:
+      "Quando o enfurecido Rino e um grupo de criminosos misteriosos começam a atormentar o Brooklyn, as coisas ficam feias para o jovem Homem-Aranha! Que mistérios o aguardam...",
+    value: 25.90,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Hq"],
+  },
+  {
+    id: 11,
+    img: "../img/11.webp",
+    nameItem: "A Ordem Mágica",
+    description:
+      "Há um motivo pelo qual você nunca viu um fantasma.De dia, os membros da Ordem Mágica vivem entre nós como amigos, vizinhos e colegas de trabalho...",
+    value: 64.90,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Hq"],
+  },
+  {
+    id: 12,
+    img: "../img/12.webp",
+    nameItem: "Deadpool - Antologia",
+    description:
+      "O programa Arma X atribui a Wade Wilson um fator de regeneração que lhe permite curar-se de um câncer, mas o deixa desfigurado para sempre...",
+    value: 126.90,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Hq"],
+  },
+  
   
 ];
