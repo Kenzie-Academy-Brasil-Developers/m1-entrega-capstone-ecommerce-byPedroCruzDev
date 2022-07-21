@@ -30,6 +30,7 @@ function createCards(obj, section){
     let price       = obj.value
     let addCart     = obj.addCart
     let tag         = obj.tag
+    let splitName   = obj.splitName
     
     //criando tags
     const li      = document.createElement('li')
@@ -151,7 +152,6 @@ function removeButton (event){
         return  element.name == spanButton.id
        })
   
-       console.log(index)
        cardProducts.splice(index,1)
 
      
@@ -159,7 +159,6 @@ function removeButton (event){
     listProducts(cardProducts,cartUl)
     sumTotal(cardProducts)
     
-    console.log(cardProducts)
     }
 
     return cardProducts
@@ -174,7 +173,7 @@ let button = document.querySelector('.search-form > label')
 
 button.addEventListener('click', (event) =>{
     //value => valor digitado pelo usuario
-    let searchItens = input.value
+    let searchItens = input.value.trim()
 
     let resultSearch= search(searchItens)
 
@@ -185,13 +184,49 @@ function search(value){
     let resultToSearch = []
 
     for(let i = 0; i<data.length; i ++){
+       
         if(value == data[i].nameItem){
 
             resultToSearch.push(data[i])
         }else if(value == data[i].tag){
+            resultToSearch.push(data[i])
+        }else if(data[i].splitName.includes(value)){
             resultToSearch.push(data[i])
         }
     }
 
     return resultToSearch
 }
+
+
+let hq    = document.querySelector('.hq')
+
+let mangas= document.querySelector('.mangas')
+
+let allProducts = document.querySelector('.all')
+
+
+mangas.addEventListener('click', () =>{
+    //recebe um valor pré definido igual a tag dentro do nossa data
+    let searchItens = 'Manga'
+
+    let resultSearch= search(searchItens)
+
+    listProducts(resultSearch, ul)
+} )
+
+//lista apenas os HQ´s
+hq.addEventListener('click', () =>{
+    
+    let searchItens = 'Hq'
+
+    let resultSearch= search(searchItens)
+
+    listProducts(resultSearch, ul)
+} )
+
+allProducts.addEventListener('click', () =>{
+
+    listProducts(data, ul)
+} )
+
